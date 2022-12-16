@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+.translate--5xt {
+  transform: translateX(5%);
+}
+.translate--10xt {
+  transform: translateX(10%);
+}
+.translate--5yt {
+  transform: translateY(5%);
+}
+.translate--10yt {
+  transform: translateY(10%);
+}
+
+.flag {
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #2e2e2e;
+  width: 120px;
+  height: 50px;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.flag:hover {
+  width: 400px;
+  color: transparent;
+}
+.flag:hover .attribution {
+  width: 400px;
+  opacity: 1;
+}
+
+.attribution {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 0;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+.attribution a {
+  color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background: #fff;
+  background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+}
+
+.socialcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.social__header {
+  display: flex;
+  justify-content: space-around;
+}
+.social__description {
+  padding: 2rem;
+}
+.social__title {
+  color: hsl(300deg, 43%, 22%);
+  font-weight: 700;
+  font-size: 3rem;
+  max-width: 20rem;
+}
+.social__paragraph {
+  margin-top: 1.5rem;
+  color: hsl(303deg, 10%, 53%);
+  font-weight: 500;
+  max-width: 25rem;
+  line-height: 1.5rem;
+}
+.social__stars {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.social__starcard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: hsl(300deg, 24%, 96%);
+  padding: 1rem;
+}
+.social__review {
+  margin-left: 1.5rem;
+  color: hsl(300deg, 43%, 22%);
+}
+.social__starsicons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social__staricon {
+  margin: 0 3px;
+}
+.social__users {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social__cardusers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: hsl(300deg, 43%, 22%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 0 1rem;
+}
+.social__userdetails {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.social__user {
+  border-radius: 50%;
+  display: block;
+  margin-right: 0.4rem;
+  transform: scale(0.6);
+}
+.social__useridentity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social__username {
+  color: #fff;
+}
+.social__verified {
+  color: hsl(333deg, 80%, 67%);
+}
+.social__userdescription {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-weight: 400;
+  max-width: 17rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 895px) {
+  body {
+    background: #fff;
+    background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+  }
+  .socialcon {
+    margin: 10px;
+  }
+  .social__header {
+    flex-direction: column;
+  }
+  .social__users {
+    flex-direction: column;
+  }
+  .social__starcard {
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
+  .social__review {
+    margin-top: 0.5rem;
+  }
+  .social__cardusers {
+    margin-top: 1.5rem;
+  }
+  .translate--5xt {
+    transform: none;
+  }
+  .translate--10xt {
+    transform: none;
+  }
+  .translate--5yt {
+    transform: none;
+  }
+  .translate--10yt {
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

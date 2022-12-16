@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap')
+
+$very-dark-magenta: hsl(300, 43%, 22%)
+$soft-pink: hsl(333, 80%, 67%)
+
+$dark-grayish-magenta: hsl(303, 10%, 53%)
+$light-grayish-magenta: hsl(300, 24%, 96%)
+$white: hsl(0, 0%, 100%)
+
+$font-size: 15px
+
+$interlineado: 1.5rem
+$family: 'League Spartan', sans-serif     //400 ,500, 700
+
+
+.translate
+    &--5xt
+        transform: translateX(5%)
+    &--10xt
+        transform: translateX(10%)
+    &--5yt
+        transform: translateY(5%)
+    &--10yt
+        transform: translateY(10%)
+
+
+.flag
+    position: absolute
+    top: 0
+    margin-top: 5px
+    border-top-right-radius: 1rem
+    border-bottom-right-radius: 1rem
+    background: #2e2e2e
+    width: 120px
+    height: 50px
+    transition: all 1s
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+    font-family: sans-serif
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 16px
+    &:hover
+        width: 400px
+        color: transparent
+        .attribution
+            width: 400px
+            opacity: 1
+
+.attribution
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    transition: all 1s
+    width: 0
+    font-size: 16px
+    text-align: center
+    opacity: 0
+    white-space: nowrap
+    overflow: hidden
+    font-family: sans-serif
+    color: #fff
+    text-decoration: none
+    a
+        color: #fff
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: $family
+
+
+html
+    font-size: $font-size
+
+body
+    background: #fff
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg")
+    background-repeat: no-repeat, no-repeat
+
+.socialcon
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+.social
+    &__header
+        display: flex
+        justify-content: space-around
+    &__description
+        padding: 2rem
+    &__title
+        color: $very-dark-magenta
+        font-weight: 700
+        font-size: 3rem
+        max-width: 20rem
+    &__paragraph
+        margin-top: $interlineado
+        color: $dark-grayish-magenta
+        font-weight: 500
+        max-width: 25rem
+        line-height: 1.5rem
+    &__stars
+        padding: 1rem
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+    &__starcard
+        display: flex
+        justify-content: space-around
+        align-items: center
+        background: $light-grayish-magenta
+        padding: 1rem
+    &__review
+        margin-left: 1.5rem
+        color: $very-dark-magenta
+    &__starsicons
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &__staricon
+        margin: 0 3px
+    &__users
+        display: flex
+        justify-content: space-evenly
+    &__cardusers
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        background: $very-dark-magenta
+        border-radius: 1rem
+        padding: 1.5rem
+        margin: 0 1rem
+    &__userdetails
+        display: flex
+        justify-content: left
+        align-items: center
+    &__user
+        border-radius: 50%
+        display: block
+        margin-right: 0.4rem
+        transform: scale(0.6)
+    &__useridentity
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__username
+        color: #fff
+    &__verified
+        color: $soft-pink
+    &__userdescription
+        margin-top: 0.5rem
+        color: #fff
+        font-weight: 400
+        max-width: 17rem
+        line-height: 1.5rem
+        
+    
+@media screen and (max-width: 895px)
+    body
+        background: #fff
+        background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg")
+        background-repeat: no-repeat, no-repeat
+    .socialcon
+        margin: 10px
+    .social
+        &__header
+            flex-direction: column
+        &__users
+            flex-direction: column
+        &__starcard
+            margin-top: $interlineado
+            flex-direction: column
+        &__review
+            margin-top: $interlineado - 1rem
+        &__cardusers
+            margin-top: $interlineado
+    .translate
+        &--5xt
+            transform: none
+        &--10xt
+            transform: none
+        &--5yt
+            transform: none
+        &--10yt
+            transform: none
+    
+
+
+
+
