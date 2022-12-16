@@ -1,4 +1,4 @@
-# Four Card Feature
+# Social Proof Section
 
 ## SKILLS
 
